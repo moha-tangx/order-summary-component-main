@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* color-scheme: light dark; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: system-ui;
+}
+
+:root {
+  /* ### Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --sub-bg: hsla(46, 50%, 90%, 0.4);
+
+  /* ### Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+main {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: url("./images/pattern-background-desktop.svg") no-repeat
+    var(--Pale-blue);
+  background-size: contain;
+}
+
+.card {
+  height: 80%;
+  width: 30%;
+  border-radius: 1.5rem;
+  box-shadow: -2px 2px 20px 1px #777;
+  min-width: 370px;
+}
+
+.top {
+  height: 30%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.top img {
+  object-fit: cover;
+  width: 100%;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+.bottom {
+  height: 70%;
+  width: 100%;
+  padding: 10% 0 4%;
+  background-color: var(--Very-pale-blue);
+  border-radius: inherit;
+}
+.bottom > * {
+  margin: 4% auto;
+  text-align: center;
+}
+h4 {
+  color: var(--Dark-blue);
+  font-size: 2rem;
+}
+p {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
+
+.sub {
+  height: 25%;
+  background-color: var(--sub-bg);
+  width: 80%;
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  padding: 0 5%;
+}
+
+.audio-icon {
+  height: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.audio-icon img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sub > span {
+  color: var(--Bright-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  margin-left: 25%;
+}
+
+.annual-plan {
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+.price {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
+
+.button {
+  width: 80%;
+  color: #fff;
+  background-color: var(--Bright-blue);
+  padding: 2% 0;
+  text-align: center;
+  border-radius: 11px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: -2px 2px 20px 1px #777;
+}
+.cancle {
+  text-align: center;
+  margin: 0 auto;
+  color: var(--Desaturated-blue);
+  font-weight: 600;
+}
